@@ -1,0 +1,35 @@
+Resumidamente o problema de props drilling é quando um componente é passado para vários outros componentes, assim passando variaveis inteiras
+para outro componente que precisa de apenas um dado especifico. A fim de evitar o props drilling se usa o ReactContext que é uma forma depassar
+dados sem precisar passar props manualmente. 
+
+Exemplo
+
+import React, { createContext, useState } from 'react';
+
+const CompletedContext = createContext();
+
+const App = () => {
+  const [completed, setCompleted] = useState(false);
+
+  return (
+    <CompletedContext.Provider value={{ completed, setCompleted }}>
+      <div>
+        <TaskList />
+      </div>
+    </CompletedContext.Provider>
+  )
+}
+
+Usando o useContext:
+
+import React, { useContext } from 'react';
+
+const TaskList = () => {
+  const { completed, setCompleted } = useContext(CompletedContext);
+
+  return (
+    <div>
+      <Task completed={completed} setCompleted={setCompleted} />
+    </div>
+  )
+}
