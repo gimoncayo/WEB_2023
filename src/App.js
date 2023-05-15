@@ -4,8 +4,22 @@
 //import Pai from "./componets/atividade01/questao01/01Pai"
 //import * as PC from "./componets/atividade01/02MeuPC"
 //import * as Batalha from "./componets/atividade01/03Batalha"
-import FunctionContextA from "./componets/atividade02/questao1/FunctionContextA"
-import ComponenteAvo from "./componets/atividade02/questao3/ComponenteAvo"
+//import FunctionContextA from "./componets/atividade02/questao1/FunctionContextA"
+//import ComponenteAvo from "./componets/atividade02/questao3/ComponenteAvo"
+//import VotaCidades from "./componets/atividade03/VotaCidades"
+//import Pai from "./componets/atividade03/questão2/Pai"
+//import Questao01 from "./componets/atividade04/Questao1/Questao1"
+import Questao02 from "./componets/atividade04/Questao2"
+
+function App() {
+  return(
+    <div>
+      <Questao02/>
+    </div>
+  )
+}
+
+export default App
 
 //Atividade 0
 //01MeusDados
@@ -46,13 +60,21 @@ import ComponenteAvo from "./componets/atividade02/questao3/ComponenteAvo"
 }*/
 
 //Atividade 2
-function App() {
+/*function App() {
   return(
     <div>
       <FunctionContextA/>
       <ComponenteAvo/>
     </div>
   )
-}
+}*/
 
-export default App
+//Atividade 3
+/*function App() {
+  return(
+    <div>
+      <VotaCidades/>
+      <Pai/>
+    </div>
+  )
+}*/
